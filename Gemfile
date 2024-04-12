@@ -27,6 +27,8 @@ gem 'minitest'
 gem 'minitest-reporters'
 gem 'guard'
 gem 'guard-minitest'
+gem 'ruby_gntp'
+gem 'libnotify'
 end
 group :production do
 gem 'pg'

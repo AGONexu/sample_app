@@ -131,6 +131,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    libnotify (0.9.4)
+      ffi (>= 1.0.11)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -235,6 +237,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     ruby-progressbar (1.13.0)
+    ruby_gntp (0.3.4)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -308,6 +311,7 @@ DEPENDENCIES
   guard-minitest
   importmap-rails
   jbuilder
+  libnotify
   listen
   minitest
   minitest-reporters
@@ -315,6 +319,7 @@ DEPENDENCIES
   puma
   rails
   rails-controller-testing
+  ruby_gntp
   sass-rails
   selenium-webdriver
   spring
