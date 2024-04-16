@@ -5,10 +5,20 @@
   <meta charset="utf-8">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <!-- Replace 'data-turbolinks-track' with 'data-turbo-track' for Turbo Drive in Rails 7 -->
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+  <!-- Replace 'javascript_pack_tag' with 'javascript_importmap_tags' if using Importmaps -->
   <%= javascript_importmap_tags %>
+  <!-- Continue to include shim for legacy browser support -->
+  <%= render 'layouts/shim' %>
 </head>
 <body>
-  <%= yield %>
+  <!-- Render header from a partial -->
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <%= yield %>
+    <!-- Render footer from a partial -->
+    <%= render 'layouts/footer' %>
+  </div>
 </body>
 </html>
